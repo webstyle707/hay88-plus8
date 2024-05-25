@@ -1,0 +1,112 @@
+.bgfooter {
+    background-image: url(./images/imageforday1/imgfooter.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+
+  .bgcardgirl {
+    background-image: url(./images/imageforday1/bgcardgirl.png);
+    background-size: cover;
+    background-position: center;
+  }
+
+  .splide__pagination__page.is-active {
+    background: #ff0000 !important;
+    transform: scale(1.4);
+  }
+
+  .splide__slide {
+    text-align: center;
+  }
+
+  .splide__slide img {
+    width: 100%;
+    height: auto;
+  }
+
+  .main {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  #splide3 {
+    width: 300px;
+  }
+
+  header.sticky {
+    width: 100%;
+    transition: all 4s ease;
+    z-index: 5;
+    animation: scrollDown 1s;
+    position: fixed;
+  }
+
+  @keyframes scrollDown {
+    0% {
+      transform: translateY(-100%);
+    }
+
+    100% {
+      transform: translateY(0%);
+      position: fixed;
+    }
+  }
+
+  @media (min-width: 1536px) {
+    .responsive {
+      width: 66%;
+    }
+  }
+
+
+
+  .scaleAnimation{
+    animation: scaleAnimation 1s infinite alternate; /* Apply animation */
+  }
+
+@keyframes scaleAnimation {
+    0% {
+        transform: scale(0.97);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+
+
+
+
+/* @property --angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+.moving-border {
+  width: 200px;
+  height: auto;
+  position: relative;
+  background: #111;
+  padding: 4px;
+}
+.moving-border::before,
+.moving-border::after {
+  content: "";
+  position: absolute;
+  inset: -0.2rem;
+  z-index: -1;
+  background: linear-gradient(var(--angle), 
+    #032146,  #C3F2FF, #b00);
+  animation: rotate 10s linear infinite;
+}
+.moving-border::after {
+  filter: blur(10px);
+}
+@keyframes rotate {
+  0%     { --angle: 0deg; }
+  100%   { --angle: 360deg;
+  }
+} */
